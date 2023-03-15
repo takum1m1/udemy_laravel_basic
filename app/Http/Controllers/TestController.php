@@ -23,7 +23,7 @@ class TestController extends Controller
         // クエリビルダ
         $queryBuilder = DB::table("tests")->where("text", "=", "bbb")->select("id","text")->get();
 
-        dd($values, $count, $first, $whereBBB, $queryBuilder);
+        // dd($values, $count, $first, $whereBBB, $queryBuilder);
 
         return view("tests.test", compact("values"));
     }
